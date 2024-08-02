@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Lab_Test.css">
+</head>
+<body>
+    <div class="box">
+        <form class="input-container">
+            <h1>a. Your contact details</h1>          
+            <input  type="text" title="name"  placeholder="Full Name" required><br>
+            <input  type="number" title="patient_id"  placeholder="Enter patient id if exists" required><br> 
+            <input  type="number" title="contact_no" min="6000000000" max="9999999999" placeholder="Contact Number" required><br>
+            <input  type="email" title="email" placeholder="Enter email id" required><br>    
+            <br>     
+            <h1>b. Address</h1>          
+            <input  type="number" title="House_number" placeholder="House Number" required><br>
+            <input  type="text" title="street_name" placeholder="Street Name" required><br> 
+            <input  type="text" title="area" placeholder="Area" required><br>
+            <input  type="text" name="district" title="district" placeholder="District" required>
+            <select name="district" >
+                <option value="">select</option>
+                <option>Guntur</option>
+                <option>Krishna</option>
+                <option>West Godavari</option>
+                <option>East Godavari</option>
+            </select><br>  
+            <h1>c. Choose the Test Type </h1>
+            <p>
+                CBC <input type="checkbox" name="lab_exam" class="input-container"><br>
+                Complete Urine <input type="checkbox" name="lab_exam" class="input-container"><br>
+                Lipid Profile <input type="checkbox" name="lab_exam" class="input-container"><br>
+                Thyroid Stimulating Hormone(TSH) <input type="checkbox" name="lab_exam" class="input-container"><br>
+                Glucose Test <input type="checkbox" name="lab_exam" class="input-container">
+            </p>
+            <br>
+            <h1>d. Do you want a hard copy of the report also?</h1>
+            <p>
+                Yes <input type="radio" name="hard_copy" class="input-container"><br>
+                No <input type="radio" name="hard_copy" class="input-container">
+            </p>
+            <h1>e. Select Your Comfortable Date and Time</h1>
+            <input type="date" name="Comfortable_date" placeholder="mm-dd-yyyy" class="input-container">
+            <input type="time" name="Comfortable_time" placeholder="" class="input-container">
+        </form>	
+        <input type="Submit" class="input-buttons">   
+        <input type="Reset" class="input-buttons"> 
+    </div>
+</body>
+</html>
